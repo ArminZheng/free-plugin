@@ -10,7 +10,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import java.util.List;
 
 @Mojo(name = "hello", defaultPhase = LifecyclePhase.CLEAN)
-public class Hello extends AbstractMojo {
+public class HelloMojo extends AbstractMojo {
 
   @Parameter private String name;
 

@@ -8,19 +8,11 @@ Add the following to `pom.xml`:
 
 ```
 <project>
-
     ...
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>free-plugin</id>
-            <name>Free Plugin</name>
-            <url>https://arminzheng.github.io/free-plugin/free-plugin/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <build>
         <plugins>
+            ...
+            
             <plugin>
                 <groupId>com.arminzheng</groupId>
                 <artifactId>free-plugin</artifactId>
@@ -37,15 +29,20 @@ Add the following to `pom.xml`:
                     <name>jack</name>
                     <args>rose</args>
                     <messages>
-                        <suibianxie>Titanic</suibianxie>
-                        <suibianxie>boat</suibianxie>
+                        <message>Titanic</message>
+                        <message>Boat</message>
                     </messages>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-    ...
-
+    <pluginRepositories>
+        <pluginRepository>
+            <id>free-plugin</id>
+            <name>Free Plugin</name>
+            <url>https://arminzheng.github.io/free-plugin/releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
 ```

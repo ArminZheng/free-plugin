@@ -30,7 +30,6 @@
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
             <version>3.8.1</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.plugin-tools</groupId>
@@ -74,6 +73,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-plugin-plugin</artifactId>
                 <version>3.5.2</version>
+                <inherited>false</inherited>
                 <configuration>
                     <goalPrefix>hello</goalPrefix>
                     <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
@@ -98,9 +98,9 @@
 
     <distributionManagement>
         <repository>
-            <id>local-repo</id>
-            <name>free-plugin</name>
-            <url>file://${project.basedir}/free-plugin</url>
+            <id>releases</id>
+            <name>deploy-releases</name>
+            <url>file://${project.basedir}/releases</url>
         </repository>
     </distributionManagement>
 </project>
