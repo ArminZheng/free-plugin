@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>Free Plugin</name>
+      <prefix>hello</prefix>
+      <artifactId>free-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
